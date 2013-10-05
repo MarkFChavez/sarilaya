@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 05, 2013 at 10:34 PM
+-- Generation Time: Oct 06, 2013 at 02:57 AM
 -- Server version: 5.5.27
 -- PHP Version: 5.4.7
 
@@ -67,6 +67,20 @@ CREATE TABLE IF NOT EXISTS `comment` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `files_tbl`
+--
+
+CREATE TABLE IF NOT EXISTS `files_tbl` (
+  `file_id` int(11) NOT NULL AUTO_INCREMENT,
+  `file_extension` text NOT NULL,
+  `file_category` text NOT NULL,
+  `file_cemod` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`file_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `folder_gallery`
 --
 
@@ -109,6 +123,20 @@ CREATE TABLE IF NOT EXISTS `main_gallery` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `news`
+--
+
+CREATE TABLE IF NOT EXISTS `news` (
+  `news_id` int(11) NOT NULL AUTO_INCREMENT,
+  `news_title` text NOT NULL,
+  `news_content` text NOT NULL,
+  `news_cremod` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`news_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `upload_file`
 --
 
@@ -139,7 +167,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`user_id`, `user_name`, `user_password`, `user_cremod`) VALUES
-(1, 'admin', 'admin', '0000-00-00 00:00:00');
+(1, 'admin', 'admin', '2013-10-05 20:48:55');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
