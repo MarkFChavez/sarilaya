@@ -659,7 +659,17 @@
 				'news_content'	=> strip_tags(htmlentities($content)),
 			);	
 
-			die($data['news_title']);		
+			$result = $this->news_model->insert($data);
+
+			if($result)
+			{
+				echo "1";
+			}
+			else
+			{
+				//you can calter here the message that will be showed 
+				show_error('Database Error'.'<a style = "margin-left:20px" href = "'.base_url().'dashboard'.'">Go back to Admin Dashboard</a>'); 																		
+			}				
 		}
 
 		public function logout()
