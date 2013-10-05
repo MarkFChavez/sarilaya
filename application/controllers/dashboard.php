@@ -212,11 +212,25 @@
 			}
 			else
 			{
-				echo "a";
-			}	
+				$this->load->model('user_model');
+
+				$data = array('user_password'=>$this->input->post('new_pass'));
+
+				$result = $this->user_model->update($this->session->userdata('username'),$data);
+				
+				if($result)
+				{
+					echo "1";
+				}
+				else
+				{
+					//you can calter here the message that will be showed 
+					show_error('Database Error'.'<a style = "margin-left:20px" href = "'.base_url().'dashboard'.'">Go back to Admin Dashboard</a>'); 																		
+				}				
+			}
 		}
 
-		public function validate_new_title()
+		public function validate_new_title() 
 		{
 			//echo $this->input->post('id');
 			//echo $this->input->post('title');

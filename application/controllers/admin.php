@@ -28,7 +28,7 @@
 				if($result)
 				{
 					$data = array(
-							'username'	=> $this->input->post('username') 
+							'username'	=> $this->input->post('username')
 						);
 					$this->session->set_userdata($data);
 					return true;

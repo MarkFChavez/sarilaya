@@ -115,3 +115,11 @@ ERROR - 2013-10-06 04:28:17 --> Severity: Notice  --> Undefined variable: top_to
 ERROR - 2013-10-06 04:28:24 --> Severity: Notice  --> Undefined variable: top_total C:\xampp\htdocs\sarilaya\application\views\dashboardpage.php 198
 ERROR - 2013-10-06 04:30:09 --> Severity: Notice  --> Undefined variable: top_total C:\xampp\htdocs\sarilaya\application\views\dashboardpage.php 198
 ERROR - 2013-10-06 04:30:45 --> Severity: Notice  --> Undefined variable: top_total C:\xampp\htdocs\sarilaya\application\views\dashboardpage.php 198
+ERROR - 2013-10-06 04:47:30 --> Severity: Notice  --> Undefined variable: top_total C:\xampp\htdocs\sarilaya\application\views\dashboardpage.php 201
+ERROR - 2013-10-06 04:48:35 --> Severity: Notice  --> Undefined variable: top_total C:\xampp\htdocs\sarilaya\application\views\dashboardpage.php 201
+ERROR - 2013-10-06 04:48:35 --> Severity: Notice  --> Undefined variable: top_total C:\xampp\htdocs\sarilaya\application\views\dashboardpage.php 201
+ERROR - 2013-10-06 04:48:35 --> Severity: Notice  --> Undefined variable: top_total C:\xampp\htdocs\sarilaya\application\views\dashboardpage.php 201
+ERROR - 2013-10-06 04:48:35 --> Severity: Notice  --> Undefined variable: top_total C:\xampp\htdocs\sarilaya\application\views\dashboardpage.php 201
+ERROR - 2013-10-06 04:48:35 --> Severity: Notice  --> Undefined variable: top_total C:\xampp\htdocs\sarilaya\application\views\dashboardpage.php 201
+ERROR - 2013-10-06 04:48:46 --> Severity: Notice  --> Undefined variable: top_total C:\xampp\htdocs\sarilaya\application\views\dashboardpage.php 201
+ERROR - 2013-10-06 04:49:00 --> Severity: Notice  --> Undefined variable: top_total C:\xampp\htdocs\sarilaya\application\views\dashboardpage.php 201

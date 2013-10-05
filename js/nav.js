@@ -10,6 +10,9 @@ $(document).ready(function(){
 	$('#password_close').on('click',function(e){
 		e.preventDefault();
 		$('#edit_pass').modal('hide');
+		$('#id_error').css('display','none');
+		$('#confirm_pass').val("");
+		$('#new_pass').val(""); 		
 	});
 
 	$('#change_password').on('click',function(e){
@@ -32,14 +35,17 @@ $(document).ready(function(){
 						{	
 							if(data == 1)
 							{
+								$('#confirm_pass').val("");
+								$('#new_pass').val(""); 
 								$('#edit_pass').modal('hide');	
 							}
 							else
 							{
 								var html_data = data;
 
-								$('#form_info').html(html_data);
+								$('#id_error').removeAttr('style');
 							}
+							
 						},
 					complete:
 						function(data) {

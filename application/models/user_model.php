@@ -18,4 +18,11 @@
 				return false;
 			}
 		}
+
+		public function update($username,$data)
+		{
+			$this->db->where('user_name',$username);
+
+			return $this->db->update('users',$data);
+		}
 	}
