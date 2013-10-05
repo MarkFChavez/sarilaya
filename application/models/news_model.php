@@ -27,6 +27,6 @@
 
 		public function insert($data)
 		{
-			return $this->db->insert('article',$data);
+			return $this->db->insert('news',$data);
 		}
 	}
