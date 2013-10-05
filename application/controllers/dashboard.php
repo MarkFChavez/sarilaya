@@ -636,6 +636,42 @@
 
 		}
 
+		public function new_news() {
+			$data['title'] = "Sarilaya | New Article";
+
+			$data['scripts'] = array('jquery.min','bootstrap.min','addarticle','nav');
+				
+			$data['styles'] = array('bootstrap.min','bootstrap-responsive.min','caritakathon');			
+
+			$this->load->view('addnews',$data);
+		}
+
+		public function validate_new_news()
+		{
+			$this->load->model('news_model');
+
+			$title = $this->input->post('titles');
+
+			$content = $this->input->post('contents');
+		
+			$data = array(
+				'news_title'		=> strip_tags(htmlentities($title)),
+				'news_content'	=> strip_tags(htmlentities($content)),
+			);	
+
+			$result = $this->news_model->insert($data);
+
+			if($result)
+			{
+				echo "1";
+			}
+			else
+			{
+				//you can calter here the message that will be showed 
+				show_error('Database Error'.'<a style = "margin-left:20px" href = "'.base_url().'dashboard'.'">Go back to Admin Dashboard</a>'); 																		
+			}				
+		}
+
 		public function logout()
 		{
 			$this->session->sess_destroy();

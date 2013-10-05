@@ -55,7 +55,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="span12">
-						<h1> News & Updates <small> <a href="#">add a news/update</a> </small> </h1>
+						<h1> News & Updates <small> <a href="<?php echo base_url(); ?>dashboard/new_news">add a news/update</a> </small> </h1>
 						<hr />
 					</div>
 				</div>

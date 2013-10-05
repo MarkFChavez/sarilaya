@@ -24,4 +24,9 @@
 
 			return $this->db->update('news',$data);
 		}
+
+		public function insert($data)
+		{
+			return $this->db->insert('article',$data);
+		}
 	}
