@@ -3,6 +3,6 @@
 	class admin extends CI_Controller{
 		public function index()
 		{
-			echo "a";
+			echo "aa";
 		}
 	}	
