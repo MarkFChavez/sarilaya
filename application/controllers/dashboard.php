@@ -627,7 +627,7 @@
 			if($result)
 			{
 				redirect('dashboard/news_and_updates');
-			}cairo_matrix_transform_distance(matrix, dx, dy)
+			}
 			else
 			{
 				//you can calter here the message that will be showed 
