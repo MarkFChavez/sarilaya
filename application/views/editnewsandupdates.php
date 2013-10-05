@@ -62,7 +62,35 @@
 
 				<div class="row">
 					<div class="span12">
-	
+						<?php $attribute = array('id'=>'account_form','style'=>'margin-left:30px'); ?>
+						<?php echo form_open("dashboard/validate_news/".$news[0]->news_id, $attribute); ?>
+							<fieldset>			
+							<legend ><h3>Edit News:</h3></legend>
+							<div class="alert alert-info">
+								<span style = "font-weight:bold"><strong>Note:&nbsp;</strong></span>
+								<span>Fields with an <span style = "color:red">*</span>&nbspasterisk are required.</span>
+							</div>
+
+							<div class="control-group" >
+								<label class="control-label" for="input01">
+									<span style = "color:red; font-weight:bold">*</span><span style = "font-weight:bold">Title:</span>
+								</label>
+								<div class="controls">
+									<input type="text" placeholder="" class="span12" name = "titles" id = "titles" value = "<?php echo $news[0]->news_title;?>"/>
+								</div>
+							</div>
+
+							<div class="control-group" >
+							  <!-- Text input-->
+								<label class="control-label" for="input01">
+									<span style = "color:red; font-weight:bold">*</span><span style = "font-weight:bold">Content:</span>
+								</label>
+									<div class="controls">
+										<textarea placeholder="" class="span12" name = "contents" id = "contents" style = "resize:none;height:200px"><?php echo $news[0]->news_content;?></textarea>
+									</div>
+							</div>	
+						<?php echo form_close();?>		
+						<button id="form_submit" class="btn btn-success" style="margin-top:2%">Send</button>	
 					</div>		
 				</div>
 			</div>

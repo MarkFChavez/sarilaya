@@ -17,4 +17,11 @@
 
 			return $query->result();
 		}
+
+		public function update($id,$data)
+		{
+			$this->db->where('news_id',$id);
+
+			return $this->db->update('news',$data);
+		}
 	}

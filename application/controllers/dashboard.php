@@ -609,6 +609,33 @@
 			}		
 		}
 
+		public function validate_news()
+		{
+			$this->load->model('news_model');
+
+			$title = $this->input->post('titles');
+
+			$content = $this->input->post('contents');
+			
+			$data = array(
+				'news_title'		=> strip_tags(htmlentities($title)),
+				'news_content'	=> strip_tags(htmlentities($content))
+			);	
+
+			$result = $this->news_model->update(end($this->uri->segments),$data);
+
+			if($result)
+			{
+				redirect('dashboard/news_and_updates');
+			}cairo_matrix_transform_distance(matrix, dx, dy)
+			else
+			{
+				//you can calter here the message that will be showed 
+				show_error('Database Error'.'<a style = "margin-left:20px" href = "'.base_url().'dashboard'.'">Go back to Admin Dashboard</a>'); 																		
+			}	
+
+		}
+
 		public function logout()
 		{
 			$this->session->sess_destroy();
