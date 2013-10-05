@@ -1,0 +1,54 @@
+@font-face {
+	font-family: Quicksand-Light;
+	src: url('fonts/Quicksand-Light.otf');
+}
+
+@font-face {
+	font-family: Quicksand-Bold;
+	src: url('fonts/Quicksand-Bold.otf');
+}
+
+body {
+	background-color: #FFFFFF;
+}
+
+.form-signin {
+	max-width: 300px;
+	padding: 19px 29px 29px;
+	margin: 0 auto 20px;
+	background-color: #fff;
+	border: 1px solid #e5e5e5;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+	box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+
+#form-wrapper {
+	padding-top: 5em;
+}
+
+.btn-color{
+	background: #b4e391; /* Old browsers */
+	background: -moz-linear-gradient(top, #b4e391 0%, #63a385 44%, #1ba466 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b4e391), color-stop(44%,#63a385), color-stop(100%,#1ba466)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #b4e391 0%,#63a385 44%,#1ba466 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #b4e391 0%,#63a385 44%,#1ba466 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #b4e391 0%,#63a385 44%,#1ba466 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #b4e391 0%,#63a385 44%,#1ba466 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4e391', endColorstr='#1ba466',GradientType=0 ); /* IE6-9 */	
+}
+
+.quick-bold {
+	font-family: Quicksand-Bold !important;
+}
+
+.quick-light {
+	font-family: Quicksand-Light !important;
+}
+
+.no-border-radius {
+	border-radius: 0px;
+}
