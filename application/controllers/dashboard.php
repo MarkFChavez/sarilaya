@@ -650,9 +650,9 @@
 		{
 			$this->load->model('news_model');
 
-			$title = $this->input->post('titles');
+			$title = $this->input->post('title');
 
-			$content = $this->input->post('contents');
+			$content = $this->input->post('content');
 		
 			$data = array(
 				'news_title'		=> strip_tags(htmlentities($title)),
