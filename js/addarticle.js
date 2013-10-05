@@ -14,7 +14,7 @@ $(document).ready(function(){
 					url: $('#account_form').attr('action'),
 					data: {	title:title,
 							content:content},
-					asyc: false,
+					asyc: false,  
 					cache: false,
 					success:
 						function(data)
