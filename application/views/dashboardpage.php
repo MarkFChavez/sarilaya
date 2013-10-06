@@ -2,7 +2,6 @@
 <html lang="en">
 	<head>
 		<title><?php echo $title; ?></title>
-		
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- Styles -->
 		<?php 
@@ -23,7 +22,7 @@
 		?>
 	</head>
 
-	<body class="quick-bold">
+	<body class="quick-light">
 
 		<div id="edit_pass" class="modal hide fade">
 			  <div class="modal-header" 
@@ -80,6 +79,7 @@
 		  			<ul class="nav pull-right">
 				      <li class="active"><a href="<?php echo base_url();?>dashboard/articles/1">Manage Articles</a></li>
 				      <li ><a href="<?php echo base_url();?>dashboard/gallery">Manage Gallery</a></li>
+					<li><a href="<?php echo base_url(); ?>dashboard/news_and_updates">News & Updates </a> </li>
 				      <li class="dropdown">
 				      	<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 							<?php echo $this->session->userdata('username'); ?><b class="caret"></b>

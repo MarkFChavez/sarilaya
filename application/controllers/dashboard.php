@@ -193,6 +193,35 @@
 		
 		}
 
+		public function news_and_updates($action, $id) {
+			$this->load->model('news_model');
+
+			if(!isset($action)) {
+				$data['title'] = 'Sarilaya | News & Updates';
+				$data['scripts'] = array('jquery.min', 'bootstrap.min','nav');
+				$data['styles'] = array('bootstrap.min', 'bootstrap-responsive.min', 'caritakathon');
+				$data['news'] = $this->news_model->get_all();
+				$this->load->view('newsandupdates', $data);
+			} else {
+				//render the edit form
+				$data['title'] = 'Sarilaya | Edit News';
+				$data['scripts'] = array('jquery.min', 'bootstrap.min', 'nav');
+				$data['styles'] = array('bootstrap.min', 'bootstrap-responsive.min', 'caritakathon');
+				$data['news'] = $this->news_model->get_news($id);
+				$this->load->view('editnewsandupdates', $data);
+			}
+		}
+
+		public function delete_news() {
+			$id = end($this->uri->segments);
+			$this->load->model('news_model');
+			if($result = $this->news_model->delete_news($id)) {
+				redirect("dashboard/news_and_updates");
+			} else {
+				show_error('Database error'.'<a style="margin-left:20px" href="'.base_url().'dashboard/articles/1'.'">Go back to admin dashboard</a>');
+			}
+		}
+
 		public function validate_password()
 		{
 			$this->load->library('form_validation');

@@ -109,14 +109,15 @@
 		  		<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
-			        <span ss="icon-bar"></span>
+			        <span class="icon-bar"></span>
 			      </a>
 
 		  		<a class="brand" href="login.html">Saliraya's Dashboard</a>
 		  		<div class="nav-collapse collapse">
 		  			<ul class="nav pull-right">
 				      <li><a href="<?php echo base_url();?>dashboard/articles/1">Manage Articles</a></li>
-				      <li class="active"><a href="gallery.html">Manage Gallery</a></li>
+				      <li class="active"><a href="#">Manage Gallery</a></li>
+				      <li> <a href="<?php echo base_url(); ?>dashboard/news_and_updates">News & Updates</a> </li>
 				      <li class="dropdown">
 				      	<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 							<?php echo $this->session->userdata('username'); ?><b class="caret"></b>

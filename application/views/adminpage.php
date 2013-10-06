@@ -23,7 +23,7 @@
 		?>
 	</head>
 
-	<body class = "quick-bold">
+	<body class = "quick-light">
 
 		<div class="container">
 
